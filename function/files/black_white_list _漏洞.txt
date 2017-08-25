@@ -1,0 +1,4 @@
+whitelist:
+com/itsec/droneapp
+com/itsec/droneapp/MyApplication.smali
+blacklist:

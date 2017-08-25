@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.itsec.droneapp" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:allowBackup="false" android:debuggable="false" 
+         android:description="@string/desc" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.itsec.droneapp.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itsec.droneapp.activity.GuideActivity">
+            <intent-filter>
+                <action android:name="com.itsec.droneapp.GuideActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itsec.droneapp.activity.MainActivity"/>
+        <activity android:name="net.miidi.ad.banner.AdBannerActivity"/>
+        <service android:name="com.xiaomi.push.service.XMJobService"/>
+        <service android:name="com.eguan.monitor.service.MonitorService"/>
+        <receiver android:name="com.itsec.droneapp.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.itsec.droneapp.receiver.SmsReciver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.itsec.droneapp.service.BootService"/>
+        <provider android:authorities="com.itsec.droneapp.myProvider" android:exported="false" android:name="com.itsec.droneapp.provider.MyProvider"/>
+        <uses-library android:name="android.test.runner"/>
+    </application>
+</manifest>

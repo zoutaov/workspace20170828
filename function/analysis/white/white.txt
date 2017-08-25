@@ -1,0 +1,7 @@
+whitelist:
+com/my089/MyApplication.smali
+com/my089/newnet/result/WebViewSignCheck.smali
+com/my089/utils/Setting.smali
+
+
+

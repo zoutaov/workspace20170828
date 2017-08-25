@@ -1,0 +1,1 @@
+ python smaliToJni.py app_sign.apk N_app_sign.apk False debug

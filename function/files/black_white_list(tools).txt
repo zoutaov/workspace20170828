@@ -1,0 +1,5 @@
+whitelist:
+com/collection/tools/KBApplication.smali
+com/collection/tools/d/m.smali
+blacklist:
+com/collection/tools/d/h.smali

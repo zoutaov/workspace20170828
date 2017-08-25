@@ -1,0 +1,5 @@
+whitelist:
+com/socket/client/h/d.smali
+com/socket/client/h/s.smali
+com/socket/client/c/b.smali
+blacklist:

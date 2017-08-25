@@ -1,0 +1,1 @@
+给smaliToJni添加模块，自动分析代码，自动添加黑名单，具体功能在pyworl/analysis

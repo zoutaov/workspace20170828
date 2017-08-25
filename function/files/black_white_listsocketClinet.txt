@@ -1,0 +1,7 @@
+whitelist:
+com/socket/client
+com/socket/client/KBApplication.smali
+blacklist:
+com/socket/client/socket/ClientSocket.smali/initSocket()Z
+com/socket/client/entity
+com/socket/client/provider

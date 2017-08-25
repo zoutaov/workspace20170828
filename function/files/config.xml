@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<!--第一个标签，判断是否是热更新-->
+	<!--这里是标识热更新的参数位置，如果需要热更新的话，需要改为 True,对应的application 需要填写入口的完整application 名称，-->
+	<hotfix value="False"/>
+	<application>
+		<!--这里需要填写全称 例如 <Hotfix name="com.demo.application.HotFixApplication"-->
+	<HotfixApplication name=""/>
+
+	<applicatioin/>
+
+<config/>
